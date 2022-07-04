@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  example-container:
+    container_name: "example"
+    image: "zhongdongy/py-flask-docker-image:latest"
+    ports:
+      - "5000:8080"
