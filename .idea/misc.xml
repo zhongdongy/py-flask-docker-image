@@ -21,8 +21,12 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/sock.py" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="243" />
+          <option name="caretOffset" value="418" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/flask_app.py" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/README.md" />
         </OpenedFileInfo>
       </list>
     </option>
