@@ -32,7 +32,7 @@ ENV LANG en_US.utf8
 # Install required softwares
 # ==
 # 1. OpenResty
-RUN apt-get update && apt-get -y install --no-install-recommends build-essential wget gnupg vim net-tools
+RUN apt-get update && apt-get -y install build-essential wget gnupg vim net-tools
 RUN wget -O - https://openresty.org/package/pubkey.gpg | apt-key add -
 RUN echo "deb http://openresty.org/package/ubuntu focal main" \
   | tee /etc/apt/sources.list.d/openresty.list
@@ -67,6 +67,7 @@ RUN python3 -m pip install -r /app/requirements.txt
 RUN mkdir -p /var/log/openresty/
 RUN mkdir -p /var/log/supervisord/
 RUN dos2unix /app/startup.sh
+RUN dos2unix /app/uwsgi.yml
 RUN chmod +x /app/startup.sh
 WORKDIR /app
 ENTRYPOINT ["./startup.sh"]
